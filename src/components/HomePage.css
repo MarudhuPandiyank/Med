@@ -1,0 +1,158 @@
+/* Base styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    font-size: 24px;
+    color: #000;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.primary-button {
+    background-color: #d774ad;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.secondary-button {
+    background-color: white;
+    color: #d774ad;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid #d774ad;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.curable-logo {
+    color: #d774ad;
+    font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .primary-button, .secondary-button {
+        font-size: 15px;
+        padding: 8px 18px;
+    }
+
+    .back-button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .primary-button, .secondary-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .footer {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 8px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .back-button {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .primary-button, .secondary-button {
+        font-size: 13px;
+        padding: 6px 14px;
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
